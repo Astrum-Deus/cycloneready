@@ -1,0 +1,401 @@
+.map-page {
+    background: #dfe4eb;
+    color: #232d3c;
+    min-height: 100vh;
+}
+
+.map-header {
+    background: #394e56;
+    color: #f4f6f8;
+    padding: 65px 0;
+}
+
+.page-category {
+    color: #c3ccd8;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.map-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.map-header p:last-child {
+    color: #d9e0e8;
+    max-width: 650px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.map-section {
+    padding: 55px 0;
+    background: #dfe4eb;
+}
+
+.section-heading {
+    margin-bottom: 25px;
+}
+
+.section-heading h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #232d3c;
+    margin-bottom: 8px;
+}
+
+.section-heading p {
+    color: #50617d;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.map-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.7fr) minmax(260px, 0.8fr);
+    gap: 18px;
+}
+
+.map-box,
+.region-box {
+    background: #f4f6f8;
+    border: 1px solid #c6cfda;
+}
+
+.map-title {
+    padding: 15px 18px;
+    background: #50617d;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.map-hint {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #dce3eb;
+}
+
+#myanmarMap {
+    width: 100%;
+    height: 520px;
+    background: #d9e0e8;
+}
+
+.map-legend {
+    padding: 15px 18px;
+    display: flex;
+    gap: 15px 22px;
+    flex-wrap: wrap;
+    align-items: center;
+    border-top: 1px solid #c6cfda;
+    color: #394e56;
+    font-size: 0.78rem;
+}
+
+.legend-heading {
+    font-weight: 700;
+    width: 100%;
+}
+
+.legend-dot {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+
+.legend-dot.high {
+    background: #c76b5d;
+}
+
+.legend-dot.moderate {
+    background: #d5a75e;
+}
+
+.legend-dot.other {
+    background: #8c9db5;
+}
+
+.region-box {
+    padding: 22px;
+}
+
+.region-box h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #232d3c;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #cbd3dc;
+    margin-bottom: 18px;
+}
+
+.region-empty {
+    text-align: center;
+    padding: 45px 10px;
+    color: #50617d;
+}
+
+.region-empty i {
+    font-size: 2.3rem;
+    display: block;
+    margin-bottom: 15px;
+    color: #8c9db5;
+}
+
+.region-empty p {
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+.region-risk {
+    display: inline-block;
+    padding: 6px 10px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+
+.region-risk.high {
+    background: #f2d9d4;
+    color: #8d4036;
+}
+
+.region-risk.moderate {
+    background: #f2e6ce;
+    color: #866126;
+}
+
+.region-risk.other {
+    background: #dce3eb;
+    color: #394e56;
+}
+
+.region-description {
+    color: #50617d;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+.region-detail-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #394e56;
+    margin-bottom: 8px;
+}
+
+.region-hazard-list {
+    padding-left: 18px;
+    color: #50617d;
+    font-size: 0.87rem;
+    line-height: 1.7;
+}
+
+.region-extra {
+    background: #dfe4eb;
+    border-left: 3px solid #8c9db5;
+    padding: 12px;
+    color: #50617d;
+    font-size: 0.82rem;
+    line-height: 1.6;
+    margin-top: 18px;
+}
+
+.map-disclaimer {
+    margin-top: 18px;
+    padding: 15px 18px;
+    background: #e9e2d2;
+    border-left: 4px solid #b58d50;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.map-disclaimer i {
+    color: #8d6b36;
+    font-size: 1.2rem;
+}
+
+.map-disclaimer p {
+    color: #66583f;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.hazards-section {
+    padding: 55px 0;
+    background: #cbd3dc;
+}
+
+.hazards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.hazard-item {
+    background: #dfe4eb;
+    border: 1px solid #bac5d1;
+    padding: 22px;
+}
+
+.hazard-item i {
+    font-size: 1.8rem;
+    color: #50617d;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.hazard-item h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #232d3c;
+    margin-bottom: 10px;
+}
+
+.hazard-item p {
+    color: #50617d;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.leaflet-popup-content-wrapper {
+    border-radius: 3px;
+}
+
+@media (max-width: 850px) {
+    .map-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .region-box {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .map-header {
+        padding: 45px 0;
+    }
+
+    .map-header h1 {
+        font-size: 2rem;
+    }
+
+    #myanmarMap {
+        height: 400px;
+    }
+
+    .hazards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .map-legend {
+        gap: 12px;
+    }
+}
+
+#myanmarMap {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.myanmar-svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 700px;
+}
+
+.map-region {
+    stroke: #f4f6f8;
+    stroke-width: 2;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    cursor: pointer;
+    transition: filter 0.15s, stroke-width 0.15s;
+}
+
+.map-region:hover {
+    filter: brightness(0.88);
+    stroke: #3a5d93;
+    stroke-width: 3;
+}
+
+.map-region.selected {
+    stroke: #232d3c;
+    stroke-width: 3.5;
+}
+
+
+#myanmarMap {
+    position: relative;
+}
+
+.myanmar-svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: grab;
+    touch-action: none;
+}
+
+.myanmar-svg:active {
+    cursor: grabbing;
+}
+
+.map-zoom-controls {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.map-zoom-button {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f4f6f8;
+    color: #34445b;
+    border: 1px solid #c5ced9;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.map-zoom-button:hover {
+    background: #dce3eb;
+}
+
+.map-zoom-button:active {
+    background: #cbd5e1;
+}
+
+.map-region {
+    cursor: pointer;
+    touch-action: none;
+}
+#myanmarMap .map-region:focus {
+    outline: none;
+}
+
+#myanmarMap .map-region:focus-visible {
+    outline: none;
+}
