@@ -1,0 +1,242 @@
+body {
+    background: #dfe4eb;
+    color: #232d3c;
+    font-family: "Quicksand", sans-serif;
+}
+
+.donate-hero {
+    min-height: 480px;
+    padding: 80px 20px;
+    background: #232d3c;
+    color: #dfe4eb;
+}
+.donate-hero h1, .donate-hero p {
+    color: white;
+}
+
+.section-label {
+    color: #8c9db5;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.donate-hero h1 {
+    margin-bottom: 20px;
+}
+
+.donate-hero .lead {
+    max-width: 700px;
+    line-height: 1.8;
+}
+
+.hero-btn {
+    background: #8c9db5;
+    color: #232d3c;
+    padding: 13px 25px;
+    font-weight: 700;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background: #dfe4eb;
+    color: #232d3c;
+    transform: translateY(-3px);
+}
+
+.donate-intro {
+    padding-top: 70px !important;
+    padding-bottom: 70px !important;
+}
+
+.donate-intro-icon {
+    width: 85px;
+    height: 85px;
+    margin: 0 auto 25px;
+    background: #50617d;
+    color: white;
+    border-radius: 30px 50% 30px 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+}
+
+.donate-intro h2 {
+    color: #232d3c;
+}
+
+.donate-intro p {
+    max-width: 750px;
+    color: #394e56;
+    line-height: 1.9;
+}
+
+.donation-card {
+    background: white;
+    padding: 35px;
+    border-radius: 40px 15px 40px 15px;
+    border-bottom: 5px solid #50617d;
+    box-shadow: 0 10px 30px rgba(35, 45, 60, 0.07);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.donation-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(35, 45, 60, 0.12);
+}
+
+.donation-card-alt {
+    background: #ffffffb5;
+    border-bottom-color: #8c9db5;
+}
+
+.donation-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.donation-icon {
+    width: 65px;
+    height: 65px;
+    background: #dfe4eb;
+    color: #50617d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border-radius: 25px 50% 30px 50%;
+}
+
+.donation-tag {
+    background: #dfe4eb;
+    color: #394e56;
+    font-weight: 700;
+    font-size: 11px;
+    padding: 9px 14px;
+    border-radius: 30px;
+    letter-spacing: 1px;
+}
+
+.donation-card h3 {
+    color: #232d3c;
+    font-size: 25px;
+}
+
+.donation-card > p {
+    color: #394e56;
+    line-height: 1.8;
+}
+
+.donation-benefits {
+    margin-top: 15px;
+}
+
+.donation-benefits p {
+    color: #394e56;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.donation-benefits i {
+    color: #50617d;
+    margin-right: 8px;
+}
+
+.donate-btn {
+    background: #50617d;
+    color: white;
+    padding: 13px 18px;
+    border-radius: 15px 30px 15px 30px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.donate-btn:hover {
+    background: #394e56;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.support-card {
+    background: #ffffffb5;
+    padding: 30px;
+    border-radius: 12px 35px 12px 35px;
+    transition: 0.3s;
+}
+
+.support-card:hover {
+    background: white;
+    transform: translateY(-5px);
+}
+
+.support-card > i {
+    display: inline-flex;
+    width: 60px;
+    height: 60px;
+    background: #50617d;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    border-radius: 20px 50% 25px 50%;
+    margin-bottom: 20px;
+}
+
+.support-card h4 {
+    color: #232d3c;
+    font-size: 20px;
+}
+
+.support-card p {
+    color: #394e56;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.donate-reminder {
+    background: #8c9db5;
+    color: #232d3c;
+    border-radius: 15px 40px 15px 40px;
+}
+
+.donate-reminder p {
+    line-height: 1.8;
+}
+
+.reminder-icon {
+    color: #232d3c;
+    font-size: 55px;
+}
+
+.page-footer {
+    background: #232d3c;
+    color: #dfe4eb;
+}
+
+.page-footer p {
+    color: #8c9db5;
+}
+
+@media (max-width: 767px) {
+    .donate-hero {
+        min-height: 400px;
+        padding: 70px 20px;
+    }
+
+    .donate-hero h1 {
+        font-size: 42px;
+    }
+
+    .donation-card {
+        padding: 25px;
+    }
+}

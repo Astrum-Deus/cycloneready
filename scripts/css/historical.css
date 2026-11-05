@@ -1,0 +1,298 @@
+body {
+    background: #dfe4eb;
+    color: #232d3c;
+    font-family: "Quicksand", sans-serif;
+}
+
+.history-header {
+    background: linear-gradient(120deg, #232d3c, #394e63);
+    color: #dfe4eb;
+    position: relative;
+    overflow: hidden;
+}
+
+.history-header::after {
+    content: "";
+    position: absolute;
+    width: 360px;
+    height: 420px;
+    border: 35px solid rgba(255,255,255,0.05);
+    border-radius: 50%;
+    right: -50px;
+    bottom: -130px;
+}
+
+.night-mode .history-intro * {
+    color:white;
+}
+
+.night-mode .history-date {
+    color: #73aac6;
+}
+.history-header-content {
+    position: relative;
+    z-index: 1;
+    max-width: 750px;
+}
+
+.history-header-content h1 {
+    color: white;
+}
+
+
+.history-header h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.history-header p:last-child {
+    color: #dfe4eb;
+    line-height: 1.8;
+    max-width: 650px;
+}
+
+.history-intro h2 {
+    font-size: 23px;
+    font-weight: 700;
+    color: #232d3c;
+    margin-bottom: 8px;
+}
+
+.history-intro p {
+    color: #64748b;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.history-timeline {
+    position: relative;
+    padding: 15px 0;
+}
+
+.history-timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: #aab8c9;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
+.timeline-row {
+    display: grid;
+    grid-template-columns: 1fr 60px 1fr;
+    align-items: center;
+    min-height: 125px;
+    position: relative;
+}
+
+.timeline-side {
+    display: flex;
+    align-items: center;
+}
+
+.timeline-left {
+    justify-content: flex-end;
+    padding-right: 25px;
+}
+
+.timeline-right {
+    justify-content: flex-start;
+    padding-left: 25px;
+}
+
+.timeline-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.timeline-dot {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #dfe4eb;
+    border: 4px solid #50617d;
+    transition: 0.3s;
+}
+
+.timeline-dot.active-dot {
+    background: #50617d;
+    transform: scale(1.2);
+    box-shadow: 0 0 0 5px rgba(80,97,125,0.15);
+}
+
+.history-tab {
+    width: 100%;
+    max-width: 240px;
+    min-height: 80px;
+    padding: 12px 18px;
+    border: 2px solid transparent;
+    background: #c8d2df;
+    color: #232d3c;
+    font-family: inherit;
+    text-align: left;
+    border-radius: 12px;
+    transition: 0.25s;
+}
+
+.history-tab:hover {
+    background: #b6c4d4;
+    transform: translateY(-3px);
+}
+
+.history-tab.active {
+    background: #50617d;
+    color: white;
+    border-color: #50617d;
+    box-shadow: 0 6px 16px rgba(35,45,60,0.15);
+}
+
+.tab-year {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    opacity: 0.75;
+    margin-bottom: 4px;
+}
+
+.tab-name {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.history-date {
+    font-weight: 700;
+    color: #50617d;
+    margin: 0;
+    font-size: 15px;
+}
+
+.history-detail {
+    background: #c8d2df;
+    border-left: 5px solid #50617d;
+    box-shadow: 0 8px 25px rgba(35,45,60,0.06);
+}
+
+.history-image {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.history-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(35,45,60,0.15);
+}
+
+.history-label {
+    color: #50617d;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.history-detail h2 {
+    color: #394e56;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.history-detail p {
+    line-height: 1.8;
+    color: #354153;
+}
+
+.history-takeaway {
+    background: #c8d2df;
+    border: 1px solid #b5c2d2;
+}
+
+.takeaway-icon {
+    font-size: 30px;
+    color: #50617d;
+}
+
+.history-takeaway h3 {
+    font-size: 19px;
+    font-weight: 700;
+    color: #232d3c;
+    margin-bottom: 8px;
+}
+
+.history-takeaway p {
+    color: #465468;
+    line-height: 1.8;
+}
+
+@media (max-width: 576px) {
+    .history-header h1 {
+        font-size: 27px;
+    }
+
+    .history-header {
+        padding: 28px !important;
+    }
+
+    .history-eyebrow {
+        font-size: 10px;
+    }
+
+    .history-timeline::before {
+        left: 50%;
+    }
+
+    .timeline-row {
+        grid-template-columns: 1fr 30px 1fr;
+        min-height: 100px;
+    }
+
+    .timeline-left {
+        padding-right: 8px;
+    }
+
+    .timeline-right {
+        padding-left: 8px;
+    }
+
+    .history-tab {
+        min-height: 65px;
+        padding: 8px;
+        border-radius: 9px;
+    }
+
+    .tab-name {
+        font-size: 12px;
+    }
+
+    .tab-year {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .history-date {
+        font-size: 11px;
+    }
+
+    .timeline-dot {
+        width: 14px;
+        height: 14px;
+    }
+
+    .history-image {
+        height: 220px;
+    }
+
+    .history-detail h2 {
+        font-size: 24px;
+    }
+}
