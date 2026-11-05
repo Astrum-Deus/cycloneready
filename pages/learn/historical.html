@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="page_title">CycloneReady | Historical Cyclones</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <link rel="stylesheet" href="../../scripts/css/historical.css">
+    <link rel="stylesheet" href="../../scripts/template.css">
+    <link rel="icon" href="../../assets/logo.png">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+        <div class="container-fluid px-3 px-lg-4">
+
+            <a class="navbar-brand me-lg-4" href="../../index.html">
+                <div class="logo-container">
+                    <div class="logo-box">
+                        <img src="../../assets/logo.png" alt="CycloneReady Logo">
+                    </div>
+                </div>
+            </a>
+
+            <button class="navbar-toggler border-0 shadow-none text-white"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent"
+                    aria-controls="navbarContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <i class="bi bi-list fs-1"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-1">
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="../../index.html"
+                           data-translate="nav_home">
+                            <i class="bi bi-house-fill nav-icon"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="../aboutus.html"
+                           data-translate="nav_about">
+                            <i class="bi bi-people-fill nav-icon"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"
+                           href="#"
+                           id="learnDropdown"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false"
+                           data-translate="nav_learn">
+                            <i class="bi bi-book-half nav-icon"></i>
+                            <span>Learn</span>
+                        </a>
+
+                        <ul class="dropdown-menu shadow-lg border-0"
+                            aria-labelledby="learnDropdown">
+
+                            <li>
+                                <a class="dropdown-item py-2 px-3"
+                                   href="howform.html"
+                                   data-translate="learn_formation">
+                                    How do cyclones form?
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item py-2 px-3 active"
+                                   href="historical.html"
+                                   data-translate="learn_history"
+                                   aria-current="page">
+                                    Historical Cyclones in Myanmar
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item py-2 px-3"
+                                   href="reducingcyclonerisks.html"
+                                   data-translate="learn_risks">
+                                    Reducing Cyclone Risks
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item py-2 px-3"
+                                   href="weaffect.html"
+                                   data-translate="learn_human_impact">
+                                    How We Affect Cyclones
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"
+                           href="#"
+                           id="toolsDropdown"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false"
+                           data-translate="nav_tools">
+                            <i class="bi bi-tools nav-icon"></i>
+                            <span>Tools</span>
+                        </a>
+
+                        <ul class="dropdown-menu shadow-lg border-0"
+                            aria-labelledby="toolsDropdown">
+
+                            <li>
+                                <a class="dropdown-item py-2 px-3"
+                                   href="../tools/checklist.html"
+                                   data-translate="tool_checklist">
+                                    Preparedness Checklist
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item py-2 px-3"
+                                   href="../tools/simulator.html"
+                                   data-translate="tool_simulator">
+                                    Cyclone Simulator
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item py-2 px-3"
+                                   href="../tools/cycnews.html"
+                                   data-translate="tool_sources">
+                                    Information Sources
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item py-2 px-3"
+                                   href="../tools/map.html"
+                                   data-translate="tool_map">
+                                    Cyclone Map
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item py-2 px-3"
+                                   href="../tools/vn.html"
+                                   data-translate="tool_decision">
+                                    Decision Making Simulator
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="../donate.html"
+                           data-translate="nav_donate">
+                            <i class="bi bi-cash-coin nav-icon"></i>
+                            <span>Donate</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0 navbar-actions">
+
+                    <button type="button"
+                            class="btn-join"
+                            id="userAccountBtn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#authModal"
+                            data-translate="join_us">
+                        <i class="bi bi-person-plus-fill me-1"></i>
+                        Join Us
+                    </button>
+
+                    <button type="button"
+                            class="settings-btn border-0"
+                            data-bs-toggle="modal"
+                            data-bs-target="#settingsModal"
+                            data-translate-title="settings"
+                            data-translate-aria="settings"
+                            title="Settings"
+                            aria-label="Settings">
+                        <i class="bi bi-gear-fill"></i>
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+
+        <section class="history-header rounded-4 p-4 p-md-5 mb-5">
+            <div class="history-header-content">
+                <h1 class="fw-bold">Historical Cyclones in Myanmar</h1>
+                <p class="mb-0">
+                    Explore some of the major cyclones that have affected Myanmar,
+                    their impact on communities, and the lessons they have taught us
+                    about disaster preparedness.
+                </p>
+            </div>
+        </section>
+
+        <section class="history-intro mb-4">
+            <h2>Explore the timeline</h2>
+            <p>
+                Select a cyclone to learn more about when it occurred, where it made landfall,
+                and how it affected the people and communities of Myanmar.
+            </p>
+        </section>
+
+        <div class="history-timeline mb-5" role="tablist" aria-label="Historical cyclone timeline">
+
+            <div class="timeline-row">
+                <div class="timeline-side timeline-left">
+                    <button class="history-tab active" id="mala-tab"
+                        data-bs-toggle="tab" data-bs-target="#mala"
+                        type="button" role="tab" aria-controls="mala" aria-selected="true">
+                        <span class="tab-year">2006</span>
+                        <span class="tab-name">Cyclone Mala</span>
+                    </button>
+                </div>
+
+                <div class="timeline-center">
+                    <span class="timeline-dot active-dot"></span>
+                </div>
+
+                <div class="timeline-side timeline-right">
+                    <p class="history-date">April 2006</p>
+                </div>
+            </div>
+
+            <div class="timeline-row">
+                <div class="timeline-side timeline-left">
+                    <p class="history-date">May 2008</p>
+                </div>
+
+                <div class="timeline-center">
+                    <span class="timeline-dot"></span>
+                </div>
+
+                <div class="timeline-side timeline-right">
+                    <button class="history-tab" id="nargis-tab"
+                        data-bs-toggle="tab" data-bs-target="#nargis"
+                        type="button" role="tab" aria-controls="nargis" aria-selected="false">
+                        <span class="tab-year">2008</span>
+                        <span class="tab-name">Cyclone Nargis</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="timeline-row">
+                <div class="timeline-side timeline-left">
+                    <button class="history-tab" id="giri-tab"
+                        data-bs-toggle="tab" data-bs-target="#giri"
+                        type="button" role="tab" aria-controls="giri" aria-selected="false">
+                        <span class="tab-year">2010</span>
+                        <span class="tab-name">Cyclone Giri</span>
+                    </button>
+                </div>
+
+                <div class="timeline-center">
+                    <span class="timeline-dot"></span>
+                </div>
+
+                <div class="timeline-side timeline-right">
+                    <p class="history-date">October 2010</p>
+                </div>
+            </div>
+
+            <div class="timeline-row">
+                <div class="timeline-side timeline-left">
+                    <p class="history-date">May 2023</p>
+                </div>
+
+                <div class="timeline-center">
+                    <span class="timeline-dot"></span>
+                </div>
+
+                <div class="timeline-side timeline-right">
+                    <button class="history-tab" id="mocha-tab"
+                        data-bs-toggle="tab" data-bs-target="#mocha"
+                        type="button" role="tab" aria-controls="mocha" aria-selected="false">
+                        <span class="tab-year">2023</span>
+                        <span class="tab-name">Cyclone Mocha</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="tab-content history-detail rounded-4 p-3 p-md-4">
+
+            <div class="tab-pane fade show active" id="mala" role="tabpanel" aria-labelledby="mala-tab">
+                <div class="row align-items-center g-4">
+                    <div class="col-md-5">
+                        <img src="../../assets/cycMala.jpg" class="img-fluid history-image" alt="Cyclone Mala">
+                    </div>
+
+                    <div class="col-md-7">
+                        <p class="history-label">29 APRIL 2006</p>
+                        <h2 class="fw-bold">Cyclone Mala</h2>
+                        <p>
+                          On 29 th April 2006 Cyclone Mala hit Myanmar near Gwa in Rakhine state causing strong winds and heavy rainfall. This caused damage to houses, trees and buildings. The local community suffered from extremely difficult situations.
+                        </p>
+                        <p>
+                            Cyclone Mala has shown the importance of preparing for disasters. Families should have emergency items ready, make sure their houses are safe and know where to go if they need to evacuate. It is important to pay attention to weather warnings given from official sources and do not share false information. The community can make themselves less at risk by keeping them up to date with correct information and helping those who may be in need. This cyclone has shown us how important it is to prepare for emergencies and pay attention to weather warnings to keep people safe and reduce damage in the future.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="nargis" role="tabpanel" aria-labelledby="nargis-tab">
+                <div class="row align-items-center g-4">
+                    <div class="col-md-5">
+                        <img src="../../assets/cycNargis.jpg" class="img-fluid history-image" alt="Cyclone Nargis">
+                    </div>
+
+                    <div class="col-md-7">
+                        <p class="history-label">2 MAY 2008</p>
+                        <h2 class="fw-bold">Cyclone Nargis</h2>
+                        <p>
+                            Cyclone Nargis occurred on May 2, 2008, affecting Myanmar with a great disaster. The weather pattern caused strong wind and torrential rainfall with severe storm surge. This caused damage in the Ayeyarwady Delta and Yangon. Villages in the coastal regions and areas which are low-lying flooded severely. Thousands of structures such as houses, schools, and hospitals were either damaged or completely destroyed. In addition, roads, bridges, power supply, and telecommunication services were adversely affected causing a challenge for aid delivery. People lost their lives and millions were affected by this disaster. Cyclone Nargis highlighted the importance of warning systems, supplies, evacuation planning, and safety shelters.
+                        </p>
+                        <p>
+                            Thousands of homes, schools and buildings were destroyed, while roads and
+                            communication systems were damaged. Many people lost their lives, and millions
+                            were affected by the disaster. Cyclone Nargis showed the importance of early
+                            warnings, emergency supplies and safe shelters to protect communities from
+                            future cyclones.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="giri" role="tabpanel" aria-labelledby="giri-tab">
+                <div class="row align-items-center g-4">
+                    <div class="col-md-5">
+                        <img src="../../assets/cycGiri.jpg" class="img-fluid history-image" alt="Cyclone Giri">
+                    </div>
+
+                    <div class="col-md-7">
+                        <p class="history-label">OCTOBER 2010</p>
+                        <h2 class="fw-bold">Cyclone Giri</h2>
+                        <p>
+                            The Cyclone Giri hit the Rakhine State in October 2010, and brought very strong winds, rainfall, and floods in the nearby towns and villages. This storm destroyed many houses, trees, and buildings. People had to deal with very challenging conditions because of the damages from the cyclone. There were damages to roads and other infrastructure, which made it more difficult for people to travel, communicate and get help.
+
+                        </p>
+                        <p>
+                            People lost their homes and needed help after the cyclone. The Cyclone Giri resulted in 45 fatalities and created many challenges for people. This storm demonstrated how quickly the strong storm can impact coastal communities. The preparation of emergency supplies, securing the homes, following the weather reports, and finding a place to hide before the cyclone are very important.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="mocha" role="tabpanel" aria-labelledby="mocha-tab">
+                <div class="row align-items-center g-4">
+                    <div class="col-md-5">
+                        <img src="../../assets/cycMocha.jpg" class="img-fluid history-image" alt="Cyclone Mocha">
+                    </div>
+
+                    <div class="col-md-7">
+                        <p class="history-label">14 MAY 2023</p>
+                        <h2 class="fw-bold">Cyclone Mocha</h2>
+                        <p>
+                            Cyclone Mocha made landfall near Sittwe in Rakhine State on 14 May 2023, bringing extremely strong winds, heavy rainfall and severe flooding to many parts of Myanmar. It was one of the strongest cyclones to affect the country in recent years. Thousands of houses, schools, hospitals and other buildings were damaged or destroyed. Many trees were destroyed, while electricity lines, roads and communication systems were also affected. Floodwater covered several areas, making it difficult for people to travel, access clean drinking water and receive emergency assistance. Many families had to leave their homes and move to safer shelters. Cyclone Mocha highlighted the importance of strong buildings, early evacuation, emergency supplies and reliable weather warnings. It reminded communities that preparing before a cyclone arrives can help protect lives and reduce damage.
+                        </p>
+                        <p>
+                            Many trees were knocked down, and power lines and roads were also damaged.
+                            Some areas were covered by floodwater, making it difficult for people to
+                            travel and get clean water. Many families had to leave their homes and move
+                            to safe shelters. Cyclone Mocha showed why strong homes, early warnings and
+                            emergency supplies are important during a cyclone.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <section class="history-takeaway mt-5 p-4 rounded-4">
+            <div class="d-flex align-items-start gap-3">
+                <i class="bi bi-shield-check takeaway-icon"></i>
+                <div>
+                    <h3>What can we learn from these cyclones?</h3>
+                    <p class="mb-0">
+                        Each cyclone reminds us that preparation matters. Understanding weather
+                        warnings, keeping emergency supplies, knowing evacuation routes and finding
+                        safe shelters can help communities reduce risks and protect lives.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <div class="modal fade"
+         id="authModal"
+         tabindex="-1"
+         aria-labelledby="authModalLabel"
+         aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content auth-modal-content border-0 shadow-lg">
+
+                <div class="modal-header border-0 pb-0 pt-3 px-4">
+                    <button type="button"
+                            class="btn-close ms-auto shadow-none"
+                            data-bs-dismiss="modal"
+                            data-translate-aria="close"
+                            aria-label="Close">
+                    </button>
+                </div>
+
+                <div class="modal-body px-4 pb-4 pt-1">
+
+                    <ul class="nav nav-pills nav-fill mb-3 auth-tabs p-1"
+                        id="authTab"
+                        role="tablist">
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active fw-semibold py-2"
+                                    id="signin-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#signin-pane"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="signin-pane"
+                                    aria-selected="true"
+                                    data-translate="sign_in">
+                                Sign In
+                            </button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link fw-semibold py-2"
+                                    id="signup-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#signup-pane"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="signup-pane"
+                                    aria-selected="false"
+                                    data-translate="sign_up">
+                                Sign Up
+                            </button>
+                        </li>
+
+                    </ul>
+
+                    <div class="tab-content modal-uniform-container"
+                         id="authTabContent">
+
+                        <div class="tab-pane fade show active"
+                             id="signin-pane"
+                             role="tabpanel"
+                             aria-labelledby="signin-tab">
+
+                            <form id="signinForm">
+
+                                <div class="mb-3">
+                                    <label for="signinEmail"
+                                           class="form-label text-modal small fw-medium"
+                                           data-translate="email_address">
+                                        Email address
+                                    </label>
+
+                                    <input type="email"
+                                           class="form-control custom-input"
+                                           id="signinEmail"
+                                           placeholder="name@example.com"
+                                           data-translate-placeholder="email_placeholder"
+                                           required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="signinPassword"
+                                           class="form-label text-modal small fw-medium"
+                                           data-translate="password">
+                                        Password
+                                    </label>
+
+                                    <input type="password"
+                                           class="form-control custom-input"
+                                           id="signinPassword"
+                                           placeholder="••••••••"
+                                           data-translate-placeholder="password_placeholder"
+                                           required>
+                                </div>
+
+                                <button type="submit"
+                                        class="btn btn-auth-submit w-100 py-2 mt-3"
+                                        data-translate="sign_in">
+                                    Sign In
+                                </button>
+
+                            </form>
+                        </div>
+
+                        <div class="tab-pane fade"
+                             id="signup-pane"
+                             role="tabpanel"
+                             aria-labelledby="signup-tab">
+
+                            <form id="signupForm">
+
+                                <div class="mb-2">
+                                    <label for="signupName"
+                                           class="form-label text-modal small fw-medium"
+                                           data-translate="full_name">
+                                        Full Name
+                                    </label>
+
+                                    <input type="text"
+                                           class="form-control custom-input"
+                                           id="signupName"
+                                           placeholder="John Doe"
+                                           data-translate-placeholder="name_placeholder"
+                                           required>
+                                </div>
+
+                                <div class="mb-2">
+                                    <label for="signupEmail"
+                                           class="form-label text-modal small fw-medium"
+                                           data-translate="email_address">
+                                        Email address
+                                    </label>
+
+                                    <input type="email"
+                                           class="form-control custom-input"
+                                           id="signupEmail"
+                                           placeholder="name@example.com"
+                                           data-translate-placeholder="email_placeholder"
+                                           required>
+                                </div>
+
+                                <div class="mb-2">
+                                    <label for="signupPassword"
+                                           class="form-label text-modal small fw-medium"
+                                           data-translate="password">
+                                        Password
+                                    </label>
+
+                                    <input type="password"
+                                           class="form-control custom-input"
+                                           id="signupPassword"
+                                           placeholder="Create a password"
+                                           data-translate-placeholder="create_password_placeholder"
+                                           required>
+                                </div>
+
+                                <button type="submit"
+                                        class="btn btn-auth-submit w-100 py-2 mt-3"
+                                        data-translate="sign_up">
+                                    Sign Up
+                                </button>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade"
+         id="settingsModal"
+         tabindex="-1"
+         aria-labelledby="settingsModalLabel"
+         aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content auth-modal-content border-0 shadow-lg">
+
+                <div class="modal-header border-0 pb-2 pt-3 px-4">
+
+                    <h5 class="modal-title fw-bold text-modal"
+                        id="settingsModalLabel"
+                        data-translate="preferences">
+                        Preferences
+                    </h5>
+
+                    <button type="button"
+                            class="btn-close ms-auto shadow-none"
+                            data-bs-dismiss="modal"
+                            data-translate-aria="close"
+                            aria-label="Close">
+                    </button>
+
+                </div>
+
+                <div class="modal-body px-4 pb-4 pt-2">
+
+                    <div class="modal-uniform-container d-flex flex-column justify-content-between">
+
+                        <form id="settingsForm"
+                              class="d-flex flex-column justify-content-between h-100">
+
+                            <div>
+
+                                <div class="mb-3 d-flex justify-content-between align-items-center p-3 rounded bg-settings-item">
+
+                                    <span class="text-modal small fw-medium d-flex align-items-center gap-2">
+                                        <i class="bi bi-moon-fill text-muted"
+                                           id="nightModeIcon"></i>
+
+                                        <span data-translate="night_mode">
+                                            Night Mode
+                                        </span>
+                                    </span>
+
+                                    <div class="form-check form-switch me-1 mb-0">
+                                        <input class="form-check-input"
+                                               type="checkbox"
+                                               role="switch"
+                                               id="nightModeSwitch">
+                                    </div>
+
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="languageSelect"
+                                           class="form-label text-modal small fw-medium"
+                                           data-translate="language">
+                                        Language
+                                    </label>
+
+                                    <select class="form-select custom-input"
+                                            id="languageSelect">
+                                        <option value="en">English</option>
+                                        <option value="my">Myanmar (မြန်မာ)</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <button type="submit"
+                                    class="btn btn-auth-submit w-100 py-2 mt-auto"
+                                    data-translate="save_changes">
+                                Save Changes
+                            </button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="custom-footer">
+
+        <div class="container py-5">
+
+            <div class="row g-4 g-lg-5">
+
+                <div class="col-lg-4 col-md-12">
+
+                    <div class="logo-container footer-logo mb-3">
+
+                        <div class="logo-box">
+                            <img src="../../assets/logo.png" alt="CycloneReady Logo">
+                        </div>
+
+                        <div class="logo-text-area">
+                            CycloneReady
+                        </div>
+
+                    </div>
+
+                    <p class="small footer-desc mb-4"
+                       data-translate="footerDesc">
+                        Your trusted companion for cyclone preparedness,
+                        real-time tracking, and community safety education
+                        in Myanmar.
+                    </p>
+
+                    <div class="d-flex gap-2 footer-socials">
+
+                        <a href="#"
+                           class="social-icon-btn"
+                           aria-label="YouTube"
+                           title="YouTube">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+
+                        <a href="#"
+                           class="social-icon-btn"
+                           aria-label="Twitter"
+                           title="Twitter">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+
+                        <a href="#"
+                           class="social-icon-btn"
+                           aria-label="Instagram"
+                           title="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="#"
+                           class="social-icon-btn"
+                           aria-label="Telegram"
+                           title="Telegram">
+                            <i class="bi bi-telegram"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-2">
+
+                    <h5 class="footer-heading fs-6"
+                        data-translate="footer_explore">
+                        Explore
+                    </h5>
+
+                    <ul class="list-unstyled footer-links mb-0">
+
+                        <li>
+                            <a href="../../index.html" data-translate="nav_home">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../aboutus.html" data-translate="nav_about">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../donate.html" data-translate="nav_donate">
+                                Donate
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-3">
+
+                    <h5 class="footer-heading fs-6"
+                        data-translate="footer_learn">
+                        Learn
+                    </h5>
+
+                    <ul class="list-unstyled footer-links mb-0">
+
+                        <li>
+                            <a href="howform.html" data-translate="learn_formation">
+                                How do cyclones form?
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="historical.html" data-translate="learn_history">
+                                Historical Cyclones in Myanmar
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="reducingcyclonerisks.html" data-translate="learn_risks">
+                                Reducing Cyclone Risks
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="weaffect.html" data-translate="learn_human_impact">
+                                How We Affect Cyclones
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-12 col-lg-3">
+
+                    <h5 class="footer-heading fs-6"
+                        data-translate="footer_tools">
+                        Tools & Resources
+                    </h5>
+
+                    <ul class="list-unstyled footer-links mb-0">
+
+                        <li>
+                            <a href="../tools/checklist.html" data-translate="tool_checklist">
+                                Preparedness Checklist
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../tools/simulator.html" data-translate="tool_simulator">
+                                Cyclone Simulator
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../tools/cycnews.html" data-translate="tool_sources">
+                                Cyclone Information Sources
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../tools/map.html" data-translate="tool_map">
+                                Cyclone Map
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../tools/vn.html" data-translate="tool_decision">
+                                Decision Making Simulator
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row g-4 mt-4 footer-bottom-section">
+
+                <div class="col-lg-10">
+
+                    <h5 class="footer-heading fs-6"
+                        data-translate="stayUpdatedTitle">
+                        Stay Updated
+                    </h5>
+
+                    <form id="newsletterForm" class="input-group">
+
+                        <input type="email"
+                               class="form-control custom-input"
+                               placeholder="Enter your email"
+                               data-translate-placeholder="newsletterPlaceholder"
+                               required>
+
+                        <button class="btn btn-auth-submit px-3"
+                                type="submit"
+                                data-translate="subscribeBtn">
+                            Subscribe
+                        </button>
+
+                    </form>
+                </div>
+
+            </div>
+
+            <hr class="footer-divider my-4">
+
+            <div class="footer-copyright-area d-flex justify-content-center align-items-center flex-wrap gap-2">
+
+                <span class="small footer-copyright">
+                    &copy; 2026 CycloneReady. All rights reserved.
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../scripts/template.js"></script>
+    <script src="../../scripts/translation.js"></script>
+    <script src="../../scripts/js/historical.js"></script>
+
+</body>
+</html>
