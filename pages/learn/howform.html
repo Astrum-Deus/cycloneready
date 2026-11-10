@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CycloneReady | How and Why Cyclones Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../scripts/css/howform.css">
+    <link rel="stylesheet" href="../../scripts/template.css">
+    <link rel="icon" href="../../assets/logo.png">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+        <div class="container-fluid px-3 px-lg-4">
+
+            <a class="navbar-brand me-lg-4" href="../../index.html">
+                <div class="logo-container">
+                    <div class="logo-box">
+                        <img src="../../assets/logo.png" alt="CycloneReady Logo">
+                    </div>
+                </div>
+            </a>
+
+            <button class="navbar-toggler border-0 shadow-none text-white"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent"
+                    aria-controls="navbarContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <i class="bi bi-list fs-1"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-1">
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="../../index.html"
+                           data-translate="nav_home">
+                            <i class="bi bi-house-fill nav-icon"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="../aboutus.html"
+                           data-translate="nav_about">
+                            <i class="bi bi-people-fill nav-icon"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"
+                           href="#"
+                           id="learnDropdown"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false"
+                           data-translate="nav_learn">
+                            <i class="bi bi-book-half nav-icon"></i>
+                            <span>Learn</span>
+                        </a>
+
+                        <ul class="dropdown-menu shadow-lg border-0"
+                            aria-labelledby="learnDropdown">
+
+                            <li>
+                                <a class="dropdown-item py-2 px-3 active"
+                                   href="howform.html"
+                                   data-translate="learn_formation"
+                                   aria-current="page">
+                                    How do cyclones form?
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item py-2 px-3"
+                                   href="historical.html"
+                                   data-translate="learn_history">
+                                    Historical Cyclones in Myanmar
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item py-2 px-3"
+                                   href="reducingcyclonerisks.html"
+                                   data-translate="learn_risks">
+                                    Reducing Cyclone Risks
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item py-2 px-3"
+                                   href="weaffect.html"
+                                   data-translate="learn_human_impact">
+                                    How We Affect Cyclones
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"
+                           href="#"
+                           id="toolsDropdown"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false"
+                           data-translate="nav_tools">
+                            <i class="bi bi-tools nav-icon"></i>
+                            <span>Tools</span>
+                        </a>
+
+                        <ul class="dropdown-menu shadow-lg border-0"
+                            aria-labelledby="toolsDropdown">
+
+                            <li>
+                                <a class="dropdown-item py-2 px-3"
+                                   href="../tools/checklist.html"
+                                   data-translate="tool_checklist">
+                                    Preparedness Checklist
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item py-2 px-3"
+                                   href="../tools/simulator.html"
+                                   data-translate="tool_simulator">
+                                    Cyclone Simulator
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item py-2 px-3"
+                                   href="../tools/cycnews.html"
+                                   data-translate="tool_sources">
+                                    Information Sources
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item py-2 px-3"
+                                   href="../tools/map.html"
+                                   data-translate="tool_map">
+                                    Cyclone Map
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item py-2 px-3"
+                                   href="../tools/vn.html"
+                                   data-translate="tool_decision">
+                                    Decision Making Simulator
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="../donate.html"
+                           data-translate="nav_donate">
+                            <i class="bi bi-cash-coin nav-icon"></i>
+                            <span>Donate</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0 navbar-actions">
+
+                    <button type="button"
+                            class="btn-join"
+                            id="userAccountBtn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#authModal"
+                            data-translate="join_us">
+                        <i class="bi bi-person-plus-fill me-1"></i>
+                        Join Us
+                    </button>
+
+                    <button type="button"
+                            class="settings-btn border-0"
+                            data-bs-toggle="modal"
+                            data-bs-target="#settingsModal"
+                            data-translate-title="settings"
+                            data-translate-aria="settings"
+                            title="Settings"
+                            aria-label="Settings">
+                        <i class="bi bi-gear-fill"></i>
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+<main class="container py-5">
+
+    <div class="row align-items-center g-0 rounded-4 overflow-hidden mb-5 hero">
+        <div class="col-lg-6 p-4 p-lg-5">
+            <p class="small fw-bold">UNDERSTANDING CYCLONES</p>
+            <h1 class="display-3 fw-bold mb-4 text-white">How and Why Cyclones Form</h1>
+            <p class="lead mb-4 text-white">Discover how warm ocean water, rising air and rotating winds work together to create powerful tropical storms.</p>
+            <a href="#formation" class="btn btn-light rounded-pill px-4 py-3">Explore Formation <i class="bi bi-arrow-down"></i></a>
+        </div>
+        <div class="col-lg-6 hero-image-container">
+            <img src="https://www.noaa.gov/media/image_download/d518455b-d3c7-4c79-b677-ff5e7d76318d" class="hero-img" alt="Satellite image of a cyclone">
+            <span class="hero-caption">TROPICAL CYCLONE SYSTEM</span>
+        </div>
+    </div>
+
+    <div class="intro mb-5">
+        <p class="small fw-bold">01. THE START</p>
+        <h2 class="display-5 fw-bold">A Powerful Storm Over Warm Oceans</h2>
+        <p class="lead">A cyclone is a large rotating storm that forms over warm ocean water. It can bring strong winds, heavy rain and flooding. Cyclones get their energy from warm, moist air above the ocean. They can become very dangerous when they grow stronger and move towards land.</p>
+    </div>
+
+    <div id="formation" class="formation-section">
+        <div class="text-center mb-5">
+            <p class="small fw-bold section-label">02. THE PROCESS</p>
+            <h2 class="display-4 fw-bold">The Birth of a Cyclone</h2>
+            <p>Follow the five stages to understand how a tropical cyclone develops.</p>
+        </div>
+
+        <div class="formation-navigation mb-5">
+            <a href="#step1"><span>01</span> Warm Water</a>
+            <a href="#step2"><span>02</span> Rising Air</a>
+            <a href="#step3"><span>03</span> Clouds</a>
+            <a href="#step4"><span>04</span> Rotation</a>
+            <a href="#step5"><span>05</span> Development</a>
+        </div>
+
+        <div class="stage-card mb-5" id="step1">
+            <div class="row align-items-center g-0">
+                <div class="col-md-6">
+                    <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/esd/eo/images/imagerecords/5000/5862/atlantic_amsre_18sep05_lrg.jpg?crop=faces%2Cfocalpoint&fit=crop&h=720&w=1440" class="stage-img" alt="Warm ocean water">
+                </div>
+                <div class="col-md-6 p-4 p-lg-5">
+                    <p class="stage-number">01</p>
+                    <p class="small fw-bold stage-label">WARM OCEAN WATER</p>
+                    <h2 class="display-6 fw-bold">The Ocean Heats the Air</h2>
+                    <p>Cyclones usually begin over warm ocean water. The warm water heats the air above it and adds moisture to the air. This warm, wet air gives the storm the energy it needs to start forming.</p>
+                    <div class="stage-fact"><i class="bi bi-lightbulb-fill"></i> Warm ocean water provides the heat and moisture needed for cyclone development.</div>
+                </div>
+            </div>
+        </div>
+         <div class="stage-card stage-reverse mb-5" id="step2">
+            <div class="row align-items-center g-0">
+                <div class="col-md-6 order-md-2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Dramatic_Views_of_Hurricane_Florence_from_the_International_Space_Station_From_9_12_%2842828603210%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" class="stage-img" alt="Hurricane Florence viewed from space">
+                </div>
+                <div class="col-md-6 order-md-1 p-4 p-lg-5">
+                    <p class="stage-number">02</p>
+                    <p class="small fw-bold stage-label">RISING AIR</p>
+                    <h2 class="display-6 fw-bold">Warm Air Rises</h2>
+                    <p>Warm, moist air rises into the atmosphere. As it rises, it cools and the water vapour forms tiny water droplets. These droplets create clouds. More air moves in near the ocean surface to replace the rising air.</p>
+                    <div class="stage-fact"><i class="bi bi-lightbulb-fill"></i> Rising air helps create an area of low pressure near the ocean surface.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="stage-card mb-5" id="step3">
+            <div class="row align-items-center g-0">
+                <div class="col-md-6">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFU8vETAU5Z48MMwoqhVxolG3KzCbyED8XY1ow7I4vOlTUvlrcWrSJxwlT&s=10" class="stage-img" alt="Large thunderstorm clouds">
+                </div>
+                <div class="col-md-6 p-4 p-lg-5">
+                    <p class="stage-number">03</p>
+                    <p class="small fw-bold stage-label">CLOUD FORMATION</p>
+                    <h2 class="display-6 fw-bold">Clouds and Rainstorms Develop</h2>
+                    <p>As more warm, moist air rises, large clouds and thunderstorms begin to form. When water vapour turns into water droplets, heat is released into the air. This gives the storm more energy and helps it grow.</p>
+                    <div class="stage-fact"><i class="bi bi-lightbulb-fill"></i> Heat released during condensation helps provide energy for the storm.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="stage-card stage-reverse mb-5" id="step4">
+            <div class="row align-items-center g-0">
+                <div class="col-md-6 order-md-2">
+                    <img src="https://assets.science.nasa.gov/content/dam/science/esd/eo/images/imagerecords/151000/151343/cyclonemocha_amo_2023134.jpg" class="stage-img" alt="Cyclone Mocha">
+                </div>
+                <div class="col-md-6 order-md-1 p-4 p-lg-5">
+                    <p class="stage-number">04</p>
+                    <p class="small fw-bold stage-label">ROTATING WINDS</p>
+                    <h2 class="display-6 fw-bold">The Storm Begins to Rotate</h2>
+                    <p>Air moves towards the centre of the low-pressure area. The Earth's rotation causes the moving air to turn. This effect is called the Coriolis effect. It helps give cyclones their rotating shape.</p>
+                    <div class="stage-fact"><i class="bi bi-lightbulb-fill"></i> Cyclones rotate in different directions in the Northern and Southern Hemispheres.</div>
+                </div>
+            </div>
+        </div>
+        <div class="stage-card mb-5" id="step5">
+            <div class="row align-items-center g-0">
+                <div class="col-md-6">
+                    <img src="https://elevenmyanmar.com/sites/news-eleven.com/files/styles/news_detail_image/public/news-images/storm_3.jpg?itok=sU7ilyLE" class="stage-img" alt="Tropical cyclone development">
+                </div>
+                <div class="col-md-6 p-4 p-lg-5">
+                    <p class="stage-number">05</p>
+                    <p class="small fw-bold stage-label">CYCLONE DEVELOPMENT</p>
+                    <h2 class="display-6 fw-bold">The Cyclone Grows Stronger</h2>
+                    <p>When the storm has enough warm water, moist air and suitable wind conditions, it can become stronger. Winds increase, clouds grow larger and heavy rain develops. The storm may eventually become a powerful tropical cyclone.</p>
+                    <div class="stage-fact"><i class="bi bi-lightbulb-fill"></i> A cyclone can weaken when it moves over land or cooler ocean water.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="remember-section p-4 p-md-5 rounded-4">
+        <div class="d-flex justify-content-start">
+            <i class="bi bi-info-circle-fill fs-1"></i>
+            <h2 class="fw-bold mt-3 ms-4">Remember</h2>
+        </div>
+
+        <p class="mb-0 text-white">Cyclones form through a combination of warm ocean water, moist air and rotating winds. Understanding how they develop helps us learn why they can become dangerous and why preparing early is important.</p>
+    </div>
+
+    <div class="text-center mt-5">
+        <a href="#" class="back-top">Back to Top <i class="bi bi-arrow-up"></i></a>
+    </div>
+
+</main>
+</body>
+</html>
+
+     <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <h5 class="modal-title" id="authModalLabel">Welcome to CycloneReady</h5>
+                    <p class="mb-0 text-muted">Join our community and stay prepared.</p>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <ul class="nav nav-tabs nav-fill mb-4" id="authTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active w-100" id="signin-tab" data-bs-toggle="tab" data-bs-target="#signinPane" type="button" role="tab" aria-controls="signinPane" aria-selected="true">
+                            Sign In
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link w-100" id="signup-tab" data-bs-toggle="tab" data-bs-target="#signupPane" type="button" role="tab" aria-controls="signupPane" aria-selected="false">
+                            Create Account
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="authTabContent">
+
+                    <!-- SIGN IN -->
+                    <div class="tab-pane fade show active" id="signinPane" role="tabpanel" aria-labelledby="signin-tab" tabindex="0">
+                        <form id="signinForm" novalidate>
+                            <div class="mb-3">
+                                <label for="signinEmail" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="signinEmail" placeholder="Enter your email" maxlength="254" autocomplete="email" required>
+                                <div class="invalid-feedback">Please enter a valid email address.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="signinPassword" class="form-label">Password</label>
+                                <div class="input-group">
+                                    <input type="password" class="form-control" id="signinPassword" placeholder="Enter your password" autocomplete="current-password" required>
+                                    <button class="btn btn-outline-secondary" type="button" data-toggle-password="signinPassword" aria-label="Show password">
+                                        <i class="bi bi-eye"></i>
+                                    </button>
+                                    <div class="invalid-feedback">Please enter your password.</div>
+                                </div>
+                            </div>
+
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="rememberMe">
+                                <label class="form-check-label" for="rememberMe">Remember me</label>
+                            </div>
+
+                            <div id="signinMessage" class="alert d-none" role="alert"></div>
+
+                            <button type="submit" class="btn btn-primary w-100">Sign In</button>
+                        </form>
+                    </div>
+
+                    <!-- CREATE ACCOUNT -->
+                    <div class="tab-pane fade" id="signupPane" role="tabpanel" aria-labelledby="signup-tab" tabindex="0">
+                        <form id="signupForm" novalidate>
+                            <div class="mb-3">
+                                <label for="signupName" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="signupName" placeholder="Enter your name" minlength="2" maxlength="60" autocomplete="name" required>
+                                <div class="invalid-feedback">Please enter your name (at least 2 characters).</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="signupUsername" class="form-label">Username</label>
+                                <input type="text" class="form-control" id="signupUsername" placeholder="Choose a username" minlength="3" maxlength="20" pattern="[A-Za-z0-9_]{3,20}" autocomplete="username" required>
+                                <div class="form-text">Use 3–20 letters, numbers, or underscores.</div>
+                                <div class="invalid-feedback">Use 3–20 letters, numbers, or underscores.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="signupEmail" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="signupEmail" placeholder="Enter your email" maxlength="254" autocomplete="email" required>
+                                <div class="invalid-feedback">Please enter a valid email address.</div>
+                            </div>
+
+
+                            <div class="mb-3">
+                                <label for="signupPassword" class="form-label">Password</label>
+                                <div class="input-group">
+                                    <input type="password" class="form-control" id="signupPassword" placeholder="Create a password" minlength="8" autocomplete="new-password" required>
+                                    <button class="btn btn-outline-secondary" type="button" data-toggle-password="signupPassword" aria-label="Show password">
+                                        <i class="bi bi-eye"></i>
+                                    </button>
+                                    <div class="invalid-feedback">Your password does not meet all requirements.</div>
+                                </div>
+
+                                <div class="mt-2 small">
+                                    <div id="passwordLength" class="text-danger"><i class="bi bi-x-circle me-1"></i>At least 8 characters</div>
+                                    <div id="passwordUpper" class="text-danger"><i class="bi bi-x-circle me-1"></i>At least one uppercase letter</div>
+                                    <div id="passwordLower" class="text-danger"><i class="bi bi-x-circle me-1"></i>At least one lowercase letter</div>
+                                    <div id="passwordNumber" class="text-danger"><i class="bi bi-x-circle me-1"></i>At least one number</div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="confirmPassword" class="form-label">Confirm Password</label>
+                                <div class="input-group">
+                                    <input type="password" class="form-control" id="confirmPassword" placeholder="Enter your password again" autocomplete="new-password" required>
+                                    <button class="btn btn-outline-secondary" type="button" data-toggle-password="confirmPassword" aria-label="Show password">
+                                        <i class="bi bi-eye"></i>
+                                    </button>
+                                    <div class="invalid-feedback">Your passwords must match.</div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+                                    <label class="form-check-label" for="agreeTerms">
+                                        I agree to use CycloneReady responsibly.
+                                    </label>
+                                    <div class="invalid-feedback">You must agree before creating an account.</div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="newsletterOptIn">
+                                    <label class="form-check-label" for="newsletterOptIn">
+                                        I would like to receive CycloneReady updates.
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div id="signupMessage" class="alert d-none" role="alert"></div>
+
+                            <button type="submit" class="btn btn-primary w-100">Create Account</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="modal fade"
+         id="settingsModal"
+         tabindex="-1"
+         aria-labelledby="settingsModalLabel"
+         aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content auth-modal-content border-0 shadow-lg">
+
+                <div class="modal-header border-0 pb-2 pt-3 px-4">
+
+                    <h5 class="modal-title fw-bold text-modal"
+                        id="settingsModalLabel"
+                        data-translate="preferences">
+                        Preferences
+                    </h5>
+
+                    <button type="button"
+                            class="btn-close ms-auto shadow-none"
+                            data-bs-dismiss="modal"
+                            data-translate-aria="close"
+                            aria-label="Close">
+                    </button>
+
+                </div>
+
+                <div class="modal-body px-4 pb-4 pt-2">
+
+                    <div class="modal-uniform-container d-flex flex-column justify-content-between">
+
+                        <form id="settingsForm"
+                              class="d-flex flex-column justify-content-between h-100">
+
+                            <div>
+
+                                <div class="mb-3 d-flex justify-content-between align-items-center p-3 rounded bg-settings-item">
+
+                                    <span class="text-modal small fw-medium d-flex align-items-center gap-2">
+                                        <i class="bi bi-moon-fill text-muted"
+                                           id="nightModeIcon"></i>
+
+                                        <span data-translate="night_mode">
+                                            Night Mode
+                                        </span>
+                                    </span>
+
+                                    <div class="form-check form-switch me-1 mb-0">
+                                        <input class="form-check-input"
+                                               type="checkbox"
+                                               role="switch"
+                                               id="nightModeSwitch">
+                                    </div>
+
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="languageSelect"
+                                           class="form-label text-modal small fw-medium"
+                                           data-translate="language">
+                                        Language
+                                    </label>
+
+                                    <select class="form-select custom-input"
+                                            id="languageSelect">
+                                        <option value="en">English</option>
+                                        <option value="my">Myanmar (မြန်မာ)</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <button type="submit"
+                                    class="btn btn-auth-submit w-100 py-2 mt-auto"
+                                    data-translate="save_changes">
+                                Save Changes
+                            </button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="custom-footer">
+
+        <div class="container py-5">
+
+            <div class="row g-4 g-lg-5">
+
+                <div class="col-lg-4 col-md-12">
+
+                    <div class="logo-container footer-logo mb-3">
+
+                        <div class="logo-box">
+                            <img src="../../assets/logo.png" alt="CycloneReady Logo">
+                        </div>
+
+                        <div class="logo-text-area">
+                            CycloneReady
+                        </div>
+
+                    </div>
+
+                    <p class="small footer-desc mb-4"
+                       data-translate="footerDesc">
+                        Your trusted companion for cyclone preparedness,
+                        real-time tracking, and community safety education
+                        in Myanmar.
+                    </p>
+
+                    <div class="d-flex gap-2 footer-socials">
+
+                        <a href="#"
+                           class="social-icon-btn"
+                           aria-label="YouTube"
+                           title="YouTube">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+
+                        <a href="#"
+                           class="social-icon-btn"
+                           aria-label="Twitter"
+                           title="Twitter">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+
+                        <a href="#"
+                           class="social-icon-btn"
+                           aria-label="Instagram"
+                           title="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="#"
+                           class="social-icon-btn"
+                           aria-label="Telegram"
+                           title="Telegram">
+                            <i class="bi bi-telegram"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-2">
+
+                    <h5 class="footer-heading fs-6"
+                        data-translate="footer_explore">
+                        Explore
+                    </h5>
+
+                    <ul class="list-unstyled footer-links mb-0">
+
+                        <li>
+                            <a href="../../index.html" data-translate="nav_home">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../aboutus.html" data-translate="nav_about">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../donate.html" data-translate="nav_donate">
+                                Donate
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-3">
+
+                    <h5 class="footer-heading fs-6"
+                        data-translate="footer_learn">
+                        Learn
+                    </h5>
+
+                    <ul class="list-unstyled footer-links mb-0">
+
+                        <li>
+                            <a href="howform.html" data-translate="learn_formation">
+                                How do cyclones form?
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="historical.html" data-translate="learn_history">
+                                Historical Cyclones in Myanmar
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="reducingcyclonerisks.html" data-translate="learn_risks">
+                                Reducing Cyclone Risks
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="weaffect.html" data-translate="learn_human_impact">
+                                How We Affect Cyclones
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-12 col-lg-3">
+
+                    <h5 class="footer-heading fs-6"
+                        data-translate="footer_tools">
+                        Tools & Resources
+                    </h5>
+
+                    <ul class="list-unstyled footer-links mb-0">
+
+                        <li>
+                            <a href="../tools/checklist.html" data-translate="tool_checklist">
+                                Preparedness Checklist
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../tools/simulator.html" data-translate="tool_simulator">
+                                Cyclone Simulator
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../tools/cycnews.html" data-translate="tool_sources">
+                                Cyclone Information Sources
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../tools/map.html" data-translate="tool_map">
+                                Cyclone Map
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../tools/vn.html" data-translate="tool_decision">
+                                Decision Making Simulator
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row g-4 mt-4 footer-bottom-section">
+
+                <div class="col-lg-10">
+
+                    <h5 class="footer-heading fs-6"
+                        data-translate="stayUpdatedTitle">
+                        Stay Updated
+                    </h5>
+
+                    <form id="newsletterForm" class="input-group">
+
+                        <input type="email"
+                               class="form-control custom-input"
+                               placeholder="Enter your email"
+                               data-translate-placeholder="newsletterPlaceholder"
+                               required>
+
+                        <button class="btn btn-auth-submit px-3"
+                                type="submit"
+                                data-translate="subscribeBtn">
+                            Subscribe
+                        </button>
+
+                    </form>
+                </div>
+
+            </div>
+
+            <hr class="footer-divider my-4">
+
+            <div class="footer-copyright-area d-flex justify-content-center align-items-center flex-wrap gap-2">
+
+                <span class="small footer-copyright">
+                    &copy; 2026 CycloneReady. All rights reserved.
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../scripts/template.js"></script>
+    <script src="../../scripts/translation.js"></script>
+
+</body>
+</html>
