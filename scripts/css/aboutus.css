@@ -1,0 +1,369 @@
+body {
+    background: #dfe4eb;
+    color: #232d3c;
+    font-family: "Quicksand", sans-serif;
+}
+
+.about-hero {
+    background: #232d3c;
+    color: #dfe4eb;
+    border-radius: 35px !important;
+}
+
+.about-hero p:first-child {
+    color: #8c9db5;
+    letter-spacing: 2px;
+}
+.about-hero * {
+    color: white;
+}
+.team-label {
+    color: #50617d;
+    letter-spacing: 2px;
+}
+
+.why-exist-modern-section {
+    position: relative;
+    width: 100%;
+}
+
+.organic-image-frame-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 520px;
+    padding: 20px;
+    margin: auto;
+}
+
+.organic-image-card {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1.15 / 1;
+    border-radius: 63% 37% 54% 46% / 40% 48% 52% 60%;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(35, 45, 60, 0.2);
+    z-index: 2;
+    background: #8c9db5;
+    transition: border-radius 0.6s ease, box-shadow 0.6s ease;
+}
+
+.organic-display-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.6s ease;
+}
+
+.organic-glow-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(35, 45, 60, 0.2));
+    z-index: 1;
+    pointer-events: none;
+}
+
+.organic-shape {
+    position: absolute;
+    width: 85%;
+    height: 90%;
+    pointer-events: none;
+}
+
+.organic-shape-one {
+    background: #8c9db5;
+    border-radius: 63% 37% 54% 46% / 40% 48% 52% 60%;
+    top: 0;
+    left: 0;
+    transform: rotate(-13deg);
+    z-index: 1;
+}
+
+.organic-shape-two {
+    background: #394e56;
+    border-radius: 40% 60% 40% 60% / 60% 40% 60% 40%;
+    bottom: 0;
+    right: 0;
+    transform: rotate(13deg);
+    z-index: 0;
+}
+
+.organic-floating-badge {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    z-index: 3;
+    background: #232d3c;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 2px solid #dfe4eb;
+    box-shadow: 0 5px 15px rgba(35, 45, 60, 0.2);
+}
+
+.organic-floating-badge span {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #dfe4eb;
+}
+
+.organic-image-frame-wrapper:hover .organic-image-card {
+    border-radius: 40% 60% 40% 60% / 60% 40% 60% 40%;
+    box-shadow: 0 25px 50px rgba(35, 45, 60, 0.25);
+}
+
+.organic-image-frame-wrapper:hover .organic-display-img {
+    transform: scale(1.06);
+}
+
+.why-text {
+    padding: 20px;
+}
+
+.why-text h2,
+.why-text h3 {
+    color: #232d3c;
+}
+
+.why-text p {
+    color: #394e56;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.why-quote {
+    background: #50617d;
+    color: white;
+    padding: 18px 22px;
+    border-radius: 15px 40px 15px 40px;
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+
+.contribution-section {
+    padding: 40px 0;
+}
+
+.contribution-card {
+    position: relative;
+    overflow: hidden;
+    padding: 35px 28px;
+    transition: 0.3s;
+    color: #232d3c;
+}
+
+.contribution-card:hover {
+    transform: translateY(-8px);
+}
+
+.contribution-card h3 {
+    margin: 25px 0 15px;
+    font-size: 23px;
+}
+
+.contribution-card p {
+    line-height: 1.8;
+    color: #394e56;
+}
+
+.contribution-one {
+    background: #b8c5d5;
+    border-radius: 55px 15px 60px 20px;
+}
+
+.contribution-two {
+    background: #ffffff;
+    border-radius: 15px 60px 20px 55px;
+}
+
+.contribution-three {
+    background: #9cabbc;
+    border-radius: 65px 20px 15px 55px;
+}
+
+.contribution-icon {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #50617d;
+    color: white;
+    border-radius: 25px 50% 35% 50%;
+    font-size: 27px;
+}
+
+.card-number {
+    display: block;
+    text-align: right;
+    font-size: 35px;
+    font-weight: 700;
+    opacity: 0.35;
+    margin-top: 20px;
+}
+
+.team-member {
+    background: #ffffff80;
+    border: 4px solid white;
+    border-bottom: 4px solid #50617d;
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+.team-member:hover {
+    background: white;
+    transform: translateY(-6px);
+}
+.team-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    border-radius: 12px;
+    background: #dfe4eb;
+}
+
+.team-member h3 {
+    color: #394e56;
+    font-size: 21px;
+}
+
+.contact-section .row .col-md-5 * {
+    color: white;
+}
+
+.contact-info {
+    background: #232d3c;
+    color: white;
+    border-radius: 15px 50px 15px 50px !important;
+}
+
+.contact-info p {
+    color: #dfe4eb;
+    margin-bottom: 0;
+}
+
+.contact-detail {
+    border-bottom: 1px solid #50617d;
+    padding-bottom: 18px;
+}
+
+.contact-icon {
+    color: #8c9db5;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    background: #ffffff80;
+    border-radius: 45px 15px 45px 15px !important;
+}
+
+.contact-form .form-control {
+    background: white;
+    border: 1px solid #8c9db5;
+    padding: 12px;
+    border-radius: 15px 5px 15px 5px;
+}
+
+.contact-form .form-control:focus {
+    border-color: #50617d;
+    box-shadow: 0 0 0 3px #50617d30;
+}
+
+.send-btn {
+    background: #50617d;
+    color: white;
+    padding: 12px 25px;
+    font-weight: 700;
+    border-radius: 15px 35px 15px 35px;
+}
+
+.send-btn:hover {
+    background: #394e56;
+    color: white;
+}
+
+.accordion-item {
+    background: #ffffff80;
+    border: none;
+    border-radius: 30px 10px 30px 10px !important;
+    overflow: hidden;
+}
+
+.accordion-button {
+    background: #155c6880;
+    color: #232d3c;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 22px;
+}
+
+.accordion-button:not(.collapsed) {
+    background: #50617d;
+    color: white;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.accordion-body {
+    color: #394e56;
+    line-height: 1.8;
+    padding: 25px;
+}
+
+.source-list li {
+    margin-bottom: 10px;
+}
+
+.source-list a {
+    color: #50617d;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.source-list a:hover {
+    color: #232d3c;
+    text-decoration: underline;
+}
+
+.about-footer {
+    background: #50617d;
+    color: white;
+    border-radius: 15px 45px 15px 45px !important;
+}
+.about-footer * {
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .about-hero h1 {
+        font-size: 45px;
+    }
+
+    .organic-image-frame-wrapper {
+        max-width: 420px;
+    }
+
+    .organic-image-card {
+        aspect-ratio: 1.2 / 1;
+    }
+
+    .organic-shape {
+        height: 85%;
+    }
+
+    .why-text {
+        padding: 5px;
+    }
+}
