@@ -1,0 +1,413 @@
+
+.hero {
+    background: var(--navbar-bg);
+    color: var(--footer-text);
+}
+
+.hero p:first-child {
+    color: var(--accent-color);
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    color: #ffffff;
+    line-height: 1.15;
+}
+
+.hero .lead {
+    color: var(--footer-text);
+}
+
+.hero-image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    min-height: 420px;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+.hero-image-container:hover .hero-img {
+    transform: scale(1.04);
+}
+
+.hero-caption {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: var(--navbar-bg);
+    color: var(--footer-text);
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.intro {
+    max-width: 850px;
+    padding: 35px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.intro p:first-child,
+.section-label {
+    color: var(--primary-color);
+    letter-spacing: 2px;
+}
+
+.intro h2,
+.safety-section h2 {
+    color: var(--heading-color);
+}
+
+.info-list {
+    color: var(--text-muted);
+    line-height: 1.9;
+    padding-left: 25px;
+    margin-bottom: 0;
+}
+
+.info-list li {
+    padding-left: 5px;
+    margin-bottom: 6px;
+}
+
+.info-list li::marker {
+    color: var(--primary-color);
+}
+
+.remember-section .info-list {
+    color: var(--footer-text);
+}
+
+.remember-section .info-list li::marker {
+    color: var(--accent-color);
+}
+
+.safety-section > .text-center p:last-child {
+    color: var(--text-muted);
+}
+
+.safety-navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    background: var(--surface-secondary);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.safety-navigation a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--surface-color);
+    color: var(--heading-color);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 15px;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.safety-navigation a span {
+    color: var(--primary-color);
+}
+
+.safety-navigation a:hover {
+    background: var(--primary-color);
+    color: #ffffff;
+    transform: translateY(-4px);
+}
+
+.safety-navigation a:hover span {
+    color: var(--accent-color);
+}
+
+.stage-card {
+    background: var(--surface-color);
+    border-radius: 30px 12px 30px 12px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    transition: 0.3s ease;
+    scroll-margin-top: 100px;
+}
+
+.stage-card:hover {
+    background: var(--surface-secondary);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+
+.stage-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    transition: 0.4s ease;
+}
+
+.stage-card:hover .stage-img {
+    transform: scale(1.03);
+}
+
+.stage-number {
+    color: var(--accent-color);
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 18px;
+}
+
+.stage-label {
+    color: var(--primary-color);
+    letter-spacing: 2px;
+}
+
+.stage-card h2 {
+    color: var(--heading-color);
+}
+
+.stage-card p {
+    line-height: 1.8;
+}
+
+.stage-card .info-list {
+    margin-bottom: 20px;
+}
+
+.stage-fact {
+    background: var(--surface-secondary);
+    color: var(--text-color);
+    padding: 14px;
+    border-left: 4px solid var(--primary-color);
+    border-radius: 5px 15px 15px 5px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.stage-fact i {
+    color: var(--primary-color);
+    margin-right: 8px;
+}
+
+.remember-section {
+    background: var(--navbar-bg);
+    color: var(--footer-text);
+}
+
+.remember-section h2 {
+    color: #ffffff;
+}
+
+.remember-section > i {
+    color: var(--accent-color);
+}
+
+.remember-section .info-list {
+    line-height: 1.9;
+}
+
+.remember-section .info-list li {
+    margin-bottom: 5px;
+}
+
+.back-top {
+    display: inline-block;
+    background: var(--primary-color);
+    color: #ffffff;
+    padding: 12px 23px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.back-top:hover {
+    background: var(--primary-hover);
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+body.night-mode .hero {
+    background: var(--navbar-bg);
+}
+
+body.night-mode .stage-card:hover {
+    background: var(--surface-secondary);
+}
+
+body.night-mode .safety-navigation a {
+    background: var(--surface-color);
+}
+
+body.night-mode .safety-navigation a:hover {
+    background: var(--primary-color);
+}
+
+body.night-mode .stage-fact {
+    background: var(--surface-secondary);
+}
+
+@media (max-width: 767px) {
+    .hero-img {
+        height: 250px;
+        min-height: 0;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .stage-img {
+        height: 250px;
+    }
+
+    .stage-number {
+        font-size: 42px;
+    }
+
+    .safety-navigation {
+        justify-content: flex-start;
+    }
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) {
+    color-scheme: dark !important;
+    background-color: #111820 !important;
+    color: #e7edf4 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(body, main, section, article, aside, nav, footer, header, .container, .container-fluid, .section-padding, .page-section) {
+    color: #e7edf4 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(h1, h2, h3, h4, h5, h6, p, li, dt, dd, label, legend, figcaption, blockquote, th, td, caption, .section-heading, .page-heading, .panel-heading, .results-heading, .learning-section) {
+    color: #e7edf4 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.text-muted, .text-secondary, small, .small, .eyebrow, .section-label, .lead, .intro-text, .description, .subtitle, .form-text, .helper-text) {
+    color: #b6c2cf !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(a:not(.btn):not(.button):not(.hero-btn):not(.back-top)) {
+    color: #9fcaff !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(a:not(.btn):not(.button):not(.hero-btn):not(.back-top)):hover,
+:where(html.night-mode, body.night-mode, .night-mode) :where(a:not(.btn):not(.button):not(.hero-btn):not(.back-top)):focus-visible {
+    color: #c5e0ff !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.card, .panel, .content-card, .info-card, .feature-card, .stat-card, .result-card, .checklist-card, .map-section, .map-page, .modal-content, .dropdown-menu, .popover, .accordion-item, .list-group-item, .table, .table-responsive, .form-section, .simulator-panel, .result-panel, .history-card, .news-card, .article-card, .team-card, .text-modal) {
+    background-color: #1b2632 !important;
+    color: #e7edf4 !important;
+    border-color: #3b4b5d !important;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.24) !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(input, select, textarea, .form-control, .form-select, .custom-input, .custom-select) {
+    color: #edf3f9 !important;
+    background-color: #202d3a !important;
+    border-color: #526477 !important;
+    caret-color: #edf3f9 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(input, select, textarea, .form-control, .form-select, .custom-input, .custom-select)::placeholder {
+    color: #aebbc9 !important;
+    opacity: 1 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(input, select, textarea, .form-control, .form-select, .custom-input, .custom-select):focus {
+    color: #ffffff !important;
+    background-color: #263647 !important;
+    border-color: #80baff !important;
+    box-shadow: 0 0 0 0.2rem rgba(128, 186, 255, 0.2) !important;
+    outline-color: #80baff !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(input, select, textarea, option) {
+    color-scheme: dark !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(table, th, td, .table) {
+    border-color: #3b4b5d !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.table-striped > tbody > tr:nth-of-type(odd), .table-hover > tbody > tr:hover, tr:nth-child(even)) {
+    background-color: #202d3a !important;
+    color: #e7edf4 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(hr, .divider, .section-divider) {
+    border-color: #3b4b5d !important;
+    color: #3b4b5d !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.bg-white, .bg-light, .bg-body, .background-light, .light-bg, .white-bg) {
+    background-color: #1b2632 !important;
+    color: #e7edf4 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.text-dark, .text-black, .text-body, .dark-text) {
+    color: #e7edf4 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.border, .border-top, .border-bottom, .border-start, .border-end) {
+    border-color: #3b4b5d !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.btn-light, .btn-outline-dark, .btn-secondary, .button-secondary) {
+    color: #e7edf4 !important;
+    background-color: #2a3949 !important;
+    border-color: #526477 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.btn-light, .btn-outline-dark, .btn-secondary, .button-secondary):hover {
+    color: #ffffff !important;
+    background-color: #35485c !important;
+    border-color: #7890a8 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.alert, .notice, .callout, .notification) {
+    background-color: #202d3a !important;
+    color: #e7edf4 !important;
+    border-color: #526477 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.navbar, .top-bar, .bottom-bar, .site-header, .site-footer) {
+    color: #e7edf4 !important;
+    border-color: #3b4b5d !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.navbar a, .top-bar a, .bottom-bar a, .site-header a, .site-footer a) {
+    color: #c5d8eb !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.progress, .progress-bar, .badge, .tag, .chip) {
+    border-color: #526477 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.hero, .sources-hero, .about-hero, .map-header) {
+    color: #f1f5f9 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.hero, .sources-hero, .about-hero, .map-header) :where(h1, h2, h3, h4, p, a, span, li) {
+    color: inherit !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(svg, canvas) {
+    color: inherit;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(:focus-visible) {
+    outline-color: #80baff !important;
+}
+

@@ -1,0 +1,41 @@
+{
+  "name": "CycloneReady translation files",
+  "source_languages": [
+    "en",
+    "my"
+  ],
+  "target_language_name": "Myanmar (Burmese)",
+  "schema": "Each JSON contains matching en and my objects. Keys are stable translation IDs; values are complete source strings and their Myanmar translations.",
+  "files": [
+    "aboutus.json",
+    "checklist.json",
+    "cyclone-map.json",
+    "cycnews.json",
+    "donate.json",
+    "historical.json",
+    "home.json",
+    "howform.json",
+    "manifest.json",
+    "reducingcyclonerisks.json",
+    "simulator.json",
+    "template.json",
+    "vn.json",
+    "weaffect.json"
+  ],
+  "coverage": {
+    "template.json": "Shared navigation, authentication, validation, settings, footer, form placeholders, social-link labels, image/logo alternatives and common controls; preserves every original supplied template key.",
+    "home.json": "Home page copy, testimonials and their names/roles, image alternatives, carousel accessibility labels and dynamic regional overview strings.",
+    "aboutus.json": "About page content, contact form labels/placeholders, source citations, team-member names and image alternatives.",
+    "donate.json": "Donation guidance, organisations, contribution methods and interest form.",
+    "historical.json": "Historical cyclone timeline, all date labels, impacts, lessons, documentary title and accessibility labels.",
+    "howform.json": "Cyclone formation explainer, all stages, image alternatives and explanatory copy.",
+    "reducingcyclonerisks.json": "Cyclone risk-reduction guidance and all image alternatives.",
+    "weaffect.json": "Human activities and environmental impacts explainer, including image alternatives.",
+    "checklist.json": "Checklist page, article copy, numbered section labels, task labels, progress messages, accessible labels and image alternatives.",
+    "cycnews.json": "Reliable information sources page.",
+    "cyclone-map.json": "Map page, dynamic region data, hazards, local place descriptions, generated map controls, accessibility labels and fallback/error text from map.js.",
+    "simulator.json": "Simulator page, stage descriptions (including page/JS spelling variants), status labels, condition feedback, analysis strings and image alternatives.",
+    "vn.json": "Decision-making story title screen, ending screen, UI controls, choices, dates, endings and every dialogue line from vn.js."
+  },
+  "integration_note": "These JSONs provide full bilingual key/value coverage. Static and dynamically generated source text must use the matching keys in the site translation loader or be marked with data-translate attributes for language switching to affect the rendered page."
+}

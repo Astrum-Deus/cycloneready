@@ -1,0 +1,358 @@
+body {
+    background: #dfe4eb;
+    color: #232d3c;
+    font-family: "Quicksand", sans-serif;
+}
+
+.sources-hero {
+    min-height: 450px;
+    padding: 80px 20px;
+    background: #232d3c;
+    color: #dfe4eb;
+}
+
+.section-label {
+    color: #8c9db5;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.sources-hero h1 {
+    margin-bottom: 20px;
+}
+
+.sources-hero .lead {
+    max-width: 700px;
+    line-height: 1.8;
+    color: #dfe4eb;
+}
+
+.hero-btn {
+    background: #8c9db5;
+    color: #232d3c;
+    padding: 13px 25px;
+    font-weight: 700;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background: #dfe4eb;
+    color: #232d3c;
+    transform: translateY(-3px);
+}
+
+.intro-section {
+    padding: 25px 15px;
+}
+
+.intro-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
+    background: #50617d;
+    color: white;
+    border-radius: 30px 50% 30px 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+}
+
+.intro-section h2 {
+    color: #232d3c;
+}
+
+.intro-section p {
+    max-width: 750px;
+    color: #394e56;
+    line-height: 1.9;
+}
+
+.category-heading {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    border-left: 5px solid #50617d;
+    padding-left: 18px;
+}
+
+.category-number {
+    font-size: 35px;
+    font-weight: 700;
+    color: #8c9db5;
+}
+
+.category-heading h2 {
+    font-size: 23px;
+    color: #232d3c;
+    margin-bottom: 5px;
+}
+
+.category-heading p {
+    color: #50617d;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.source-card {
+    background: white;
+    padding: 28px;
+    border-radius: 25px 10px 25px 10px;
+    border-bottom: 5px solid #8c9db5;
+    box-shadow: 0 8px 25px rgba(35, 45, 60, 0.05);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.source-card:hover {
+    transform: translateY(-7px);
+    border-bottom-color: #50617d;
+    box-shadow: 0 15px 30px rgba(35, 45, 60, 0.12);
+}
+
+.source-icon {
+    width: 60px;
+    height: 60px;
+    background: #dfe4eb;
+    color: #50617d;
+    border-radius: 20px 50% 25px 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.source-tag {
+    display: inline-block;
+    width: fit-content;
+    background: #dfe4eb;
+    color: #50617d;
+    padding: 7px 12px;
+    border-radius: 30px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.source-card h4 {
+    color: #232d3c;
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.source-card p {
+    color: #394e56;
+    font-size: 14px;
+    line-height: 1.8;
+    flex-grow: 1;
+}
+
+.source-link {
+    color: #50617d;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.source-link:hover {
+    color: #232d3c;
+    transform: translateX(3px);
+}
+
+.source-reminder {
+    background: #8c9db5;
+    color: #232d3c;
+    border-radius: 15px 40px 15px 40px;
+}
+
+.source-reminder p {
+    line-height: 1.8;
+    color: #232d3c;
+}
+
+.reminder-icon {
+    font-size: 55px;
+    color: #232d3c;
+}
+
+.sources-hero h1 {
+    color: white;
+}
+
+.page-footer {
+    background: #232d3c;
+    color: #dfe4eb;
+}
+
+.page-footer p {
+    color: #8c9db5;
+}
+
+@media (max-width: 767px) {
+    .sources-hero {
+        min-height: 380px;
+        padding: 70px 20px;
+    }
+
+    .sources-hero h1 {
+        font-size: 42px;
+    }
+
+    .category-heading {
+        gap: 12px;
+    }
+
+    .category-number {
+        font-size: 28px;
+    }
+
+    .category-heading h2 {
+        font-size: 19px;
+    }
+
+    .source-card {
+        padding: 24px;
+    }
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) {
+    color-scheme: dark !important;
+    background-color: #111820 !important;
+    color: #e7edf4 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(body, main, section, article, aside, nav, footer, header, .container, .container-fluid, .section-padding, .page-section) {
+    color: #e7edf4 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(h1, h2, h3, h4, h5, h6, p, li, dt, dd, label, legend, figcaption, blockquote, th, td, caption, .section-heading, .page-heading, .panel-heading, .results-heading, .learning-section) {
+    color: #e7edf4 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.text-muted, .text-secondary, small, .small, .eyebrow, .section-label, .lead, .intro-text, .description, .subtitle, .form-text, .helper-text) {
+    color: #b6c2cf !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(a:not(.btn):not(.button):not(.hero-btn):not(.back-top)) {
+    color: #9fcaff !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(a:not(.btn):not(.button):not(.hero-btn):not(.back-top)):hover,
+:where(html.night-mode, body.night-mode, .night-mode) :where(a:not(.btn):not(.button):not(.hero-btn):not(.back-top)):focus-visible {
+    color: #c5e0ff !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.card, .panel, .content-card, .info-card, .feature-card, .stat-card, .result-card, .checklist-card, .map-section, .map-page, .modal-content, .dropdown-menu, .popover, .accordion-item, .list-group-item, .table, .table-responsive, .form-section, .simulator-panel, .result-panel, .history-card, .news-card, .article-card, .team-card, .text-modal) {
+    background-color: #1b2632 !important;
+    color: #e7edf4 !important;
+    border-color: #3b4b5d !important;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.24) !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(input, select, textarea, .form-control, .form-select, .custom-input, .custom-select) {
+    color: #edf3f9 !important;
+    background-color: #202d3a !important;
+    border-color: #526477 !important;
+    caret-color: #edf3f9 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(input, select, textarea, .form-control, .form-select, .custom-input, .custom-select)::placeholder {
+    color: #aebbc9 !important;
+    opacity: 1 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(input, select, textarea, .form-control, .form-select, .custom-input, .custom-select):focus {
+    color: #ffffff !important;
+    background-color: #263647 !important;
+    border-color: #80baff !important;
+    box-shadow: 0 0 0 0.2rem rgba(128, 186, 255, 0.2) !important;
+    outline-color: #80baff !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(input, select, textarea, option) {
+    color-scheme: dark !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(table, th, td, .table) {
+    border-color: #3b4b5d !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.table-striped > tbody > tr:nth-of-type(odd), .table-hover > tbody > tr:hover, tr:nth-child(even)) {
+    background-color: #202d3a !important;
+    color: #e7edf4 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(hr, .divider, .section-divider) {
+    border-color: #3b4b5d !important;
+    color: #3b4b5d !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.bg-white, .bg-light, .bg-body, .background-light, .light-bg, .white-bg) {
+    background-color: #1b2632 !important;
+    color: #e7edf4 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.text-dark, .text-black, .text-body, .dark-text) {
+    color: #e7edf4 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.border, .border-top, .border-bottom, .border-start, .border-end) {
+    border-color: #3b4b5d !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.btn-light, .btn-outline-dark, .btn-secondary, .button-secondary) {
+    color: #e7edf4 !important;
+    background-color: #2a3949 !important;
+    border-color: #526477 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.btn-light, .btn-outline-dark, .btn-secondary, .button-secondary):hover {
+    color: #ffffff !important;
+    background-color: #35485c !important;
+    border-color: #7890a8 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.alert, .notice, .callout, .notification) {
+    background-color: #202d3a !important;
+    color: #e7edf4 !important;
+    border-color: #526477 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.navbar, .top-bar, .bottom-bar, .site-header, .site-footer) {
+    color: #e7edf4 !important;
+    border-color: #3b4b5d !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.navbar a, .top-bar a, .bottom-bar a, .site-header a, .site-footer a) {
+    color: #c5d8eb !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.progress, .progress-bar, .badge, .tag, .chip) {
+    border-color: #526477 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.hero, .sources-hero, .about-hero, .map-header) {
+    color: #f1f5f9 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.hero, .sources-hero, .about-hero, .map-header) :where(h1, h2, h3, h4, p, a, span, li) {
+    color: inherit !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(svg, canvas) {
+    color: inherit;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(:focus-visible) {
+    outline-color: #80baff !important;
+}
+

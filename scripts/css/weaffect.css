@@ -1,0 +1,355 @@
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.hero {
+    background: var(--navbar-bg);
+    color: var(--footer-text);
+}
+
+.hero h1 {
+    color: var(--footer-text);
+}
+
+.hero p:first-child {
+    color: var(--accent-color);
+    letter-spacing: 2px;
+}
+
+.hero .lead {
+    color: var(--footer-text);
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    min-height: 430px;
+    object-fit: cover;
+}
+
+.intro-section {
+    max-width: 850px;
+    padding: 30px 0;
+}
+
+.intro-section p:first-child,
+.section-label {
+    color: var(--primary-color);
+    letter-spacing: 2px;
+}
+
+.intro-section h2 {
+    color: var(--heading-color);
+}
+
+.intro-section .lead {
+    color: var(--text-muted);
+    line-height: 1.9;
+}
+
+.important-note {
+    background: var(--surface-secondary);
+    color: var(--text-color);
+    border-left: 5px solid var(--primary-color);
+}
+
+.important-note h3 {
+    color: var(--heading-color);
+}
+
+.important-note p {
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+.impact-row {
+    padding-top: 15px;
+}
+
+.impact-item {
+    height: 100%;
+    border-top: 5px solid var(--primary-color);
+    padding-top: 15px;
+}
+
+.impact-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.impact-img:hover {
+    transform: scale(1.02);
+}
+
+.impact-number {
+    color: var(--primary-color);
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.impact-item h3 {
+    color: var(--heading-color);
+}
+
+.impact-item p {
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+.impact-result {
+    color: var(--primary-color) !important;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.coast-section {
+    background: var(--navbar-bg);
+    color: var(--footer-text);
+}
+
+.coast-section h2 {
+    color: var(--footer-text);
+}
+
+.coast-section p {
+    color: var(--footer-text);
+    line-height: 1.8;
+}
+
+.coast-img {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+}
+
+.action-section {
+    padding-top: 30px;
+}
+
+.action-section h2,
+.action-section h4 {
+    color: var(--heading-color);
+}
+
+.action-section p {
+    color: var(--text-muted);
+    line-height: 1.8;
+}
+
+.action-icon {
+    color: var(--primary-color);
+    font-size: 35px;
+}
+
+.final-section {
+    background: var(--primary-color);
+    color: #ffffff;
+}
+
+.final-section h2 {
+    color: #ffffff;
+}
+
+.final-section p {
+    color: #ffffff;
+    line-height: 1.8;
+}
+
+.hero-img,
+.coast-img {
+    transition: opacity 0.3s ease;
+}
+
+.hero-img:hover,
+.coast-img:hover {
+    opacity: 0.9;
+}
+
+.hero .btn {
+    background: var(--accent-color);
+    border: none;
+    color: #253b3a;
+    transition: 0.3s ease;
+}
+
+.hero .btn:hover {
+    background: var(--primary-hover);
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+body.night-mode .hero {
+    background: var(--surface-color);
+}
+
+body.night-mode .important-note {
+    background: var(--surface-secondary);
+}
+
+body.night-mode .coast-section {
+    background: var(--surface-color);
+}
+
+body.night-mode .final-section {
+    background: var(--primary-color);
+}
+
+@media (max-width: 767px) {
+    .hero-img {
+        height: 260px;
+        min-height: 0;
+    }
+
+    .impact-img {
+        height: 230px;
+    }
+
+    .coast-img {
+        height: 250px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) {
+    color-scheme: dark !important;
+    background-color: #111820 !important;
+    color: #e7edf4 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(body, main, section, article, aside, nav, footer, header, .container, .container-fluid, .section-padding, .page-section) {
+    color: #e7edf4 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(h1, h2, h3, h4, h5, h6, p, li, dt, dd, label, legend, figcaption, blockquote, th, td, caption, .section-heading, .page-heading, .panel-heading, .results-heading, .learning-section) {
+    color: #e7edf4 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.text-muted, .text-secondary, small, .small, .eyebrow, .section-label, .lead, .intro-text, .description, .subtitle, .form-text, .helper-text) {
+    color: #b6c2cf !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(a:not(.btn):not(.button):not(.hero-btn):not(.back-top)) {
+    color: #9fcaff !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(a:not(.btn):not(.button):not(.hero-btn):not(.back-top)):hover,
+:where(html.night-mode, body.night-mode, .night-mode) :where(a:not(.btn):not(.button):not(.hero-btn):not(.back-top)):focus-visible {
+    color: #c5e0ff !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.card, .panel, .content-card, .info-card, .feature-card, .stat-card, .result-card, .checklist-card, .map-section, .map-page, .modal-content, .dropdown-menu, .popover, .accordion-item, .list-group-item, .table, .table-responsive, .form-section, .simulator-panel, .result-panel, .history-card, .news-card, .article-card, .team-card, .text-modal) {
+    background-color: #1b2632 !important;
+    color: #e7edf4 !important;
+    border-color: #3b4b5d !important;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.24) !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(input, select, textarea, .form-control, .form-select, .custom-input, .custom-select) {
+    color: #edf3f9 !important;
+    background-color: #202d3a !important;
+    border-color: #526477 !important;
+    caret-color: #edf3f9 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(input, select, textarea, .form-control, .form-select, .custom-input, .custom-select)::placeholder {
+    color: #aebbc9 !important;
+    opacity: 1 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(input, select, textarea, .form-control, .form-select, .custom-input, .custom-select):focus {
+    color: #ffffff !important;
+    background-color: #263647 !important;
+    border-color: #80baff !important;
+    box-shadow: 0 0 0 0.2rem rgba(128, 186, 255, 0.2) !important;
+    outline-color: #80baff !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(input, select, textarea, option) {
+    color-scheme: dark !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(table, th, td, .table) {
+    border-color: #3b4b5d !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.table-striped > tbody > tr:nth-of-type(odd), .table-hover > tbody > tr:hover, tr:nth-child(even)) {
+    background-color: #202d3a !important;
+    color: #e7edf4 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(hr, .divider, .section-divider) {
+    border-color: #3b4b5d !important;
+    color: #3b4b5d !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.bg-white, .bg-light, .bg-body, .background-light, .light-bg, .white-bg) {
+    background-color: #1b2632 !important;
+    color: #e7edf4 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.text-dark, .text-black, .text-body, .dark-text) {
+    color: #e7edf4 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.border, .border-top, .border-bottom, .border-start, .border-end) {
+    border-color: #3b4b5d !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.btn-light, .btn-outline-dark, .btn-secondary, .button-secondary) {
+    color: #e7edf4 !important;
+    background-color: #2a3949 !important;
+    border-color: #526477 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.btn-light, .btn-outline-dark, .btn-secondary, .button-secondary):hover {
+    color: #ffffff !important;
+    background-color: #35485c !important;
+    border-color: #7890a8 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.alert, .notice, .callout, .notification) {
+    background-color: #202d3a !important;
+    color: #e7edf4 !important;
+    border-color: #526477 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.navbar, .top-bar, .bottom-bar, .site-header, .site-footer) {
+    color: #e7edf4 !important;
+    border-color: #3b4b5d !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.navbar a, .top-bar a, .bottom-bar a, .site-header a, .site-footer a) {
+    color: #c5d8eb !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.progress, .progress-bar, .badge, .tag, .chip) {
+    border-color: #526477 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.hero, .sources-hero, .about-hero, .map-header) {
+    color: #f1f5f9 !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(.hero, .sources-hero, .about-hero, .map-header) :where(h1, h2, h3, h4, p, a, span, li) {
+    color: inherit !important;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(svg, canvas) {
+    color: inherit;
+}
+
+:where(html.night-mode, body.night-mode, .night-mode) :where(:focus-visible) {
+    outline-color: #80baff !important;
+}
+
